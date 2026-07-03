@@ -1,0 +1,8 @@
+# OS / tooling
+.DS_Store
+.claude/
+
+# unused source images (not referenced by the site)
+images/WhatsApp*
+images/production1.jpeg
+images/test1.jpeg
