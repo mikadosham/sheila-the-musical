@@ -671,6 +671,31 @@ img.photo-frame { width: 100%; height: 100%; object-fit: cover; }
 
   .artist-grid { grid-template-columns: 1fr; }
   .review-cards { grid-template-columns: 1fr; }
+
+  /* --- center all content on small screens --- */
+  .hero-copy,
+  .about-copy,
+  .artist-card,
+  .review-card { text-align: center; }
+
+  /* center blocks that have a max-width so they don't hang to the left */
+  .hero-blurb,
+  .about-copy p { margin-left: auto; margin-right: auto; }
+
+  /* center the logo, headshots, and the date row */
+  .hero-logo,
+  .headshot { margin-left: auto; margin-right: auto; }
+  .hero-dates { justify-content: center; flex-wrap: wrap; }
+
+  /* the review blockquote's left bar looks off when text is centered */
+  .review { border-left: none; padding-left: 0; }
+
+  /* center the big decorative quote above the centered card text */
+  .review-card::before { left: 50%; transform: translateX(-50%); }
+
+  /* center the schedule cells to match */
+  .schedule th,
+  .schedule td { text-align: center; }
 }
 
 @media (max-width: 560px) {
