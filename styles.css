@@ -669,6 +669,9 @@ img.photo-frame { width: 100%; height: 100%; object-fit: cover; }
   }
   .about-photo { width: 100%; max-width: 320px; margin: 0 auto; }
 
+  /* give the tagline room to breathe under the hero photo */
+  .hero-tagline { margin-top: 1.75rem; }
+
   .artist-grid { grid-template-columns: 1fr; }
   .review-cards { grid-template-columns: 1fr; }
 
