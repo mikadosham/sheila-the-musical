@@ -318,7 +318,7 @@ img.hero-photo-inline { display: none; }
 /* when a real <img> is dropped in, make it fill the frame */
 img.photo-frame { width: 100%; height: 100%; object-fit: cover; }
 
-.photo-hero { aspect-ratio: 4 / 5; transform: rotate(-2deg); }
+.photo-hero { aspect-ratio: 1 / 1; transform: rotate(-2deg); }
 
 .photo-about {
   aspect-ratio: 4 / 5;
@@ -664,6 +664,8 @@ img.photo-frame { width: 100%; height: 100%; object-fit: cover; }
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     max-width: 320px;
     margin: 1.75rem auto 0.5rem;
   }
